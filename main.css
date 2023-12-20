@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	background-color: #000;
+	font-family: 'Russo One', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+.logo {
+	width: 50vw;
+	height: 50vh;
+	min-width: 300px;
+	min-height: 300px;
+	object-fit: contain;
+	transition: all 0.5s;
+}
+
+/* Main */
+.main {
+	width: 100%;
+	height: 100%;
+	transition: opacity 1s;
+}
+.navbar {
+	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: opacity 0.5s;
+}
+.navbar__logo {
+	width: 80px;
+}
+.eclipse {
+	width: 60.0001px;
+	height: 60.0001px;
+}
+.cards {
+	color: #fff;
+	width: 100%;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+.cards__container {
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.cards__title {
+	transition: all 0.4s;
+}
+.card {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.card:first-child {
+	transition: all 0.5s;
+}
+.card:nth-child(2) {
+	transition: all 0.5s 0.5s;
+}
+.card:nth-child(3) {
+	transition: all 0.5s 1s;
+}
+.card:nth-child(4) {
+	transition: all 0.5s 1.5s;
+}
+.card:nth-child(5) {
+	transition: all 0.5s 2s;
+}
+.card:last-child {
+	transition: all 0.5s 2.5s;
+}
+.card:hover .card__banner img {
+	scale: 1.2;
+}
+.card__banner {
+	overflow: hidden;
+	width: 100%;
+	height: 80%;
+}
+.card__banner img {
+	width: 100%;
+	height: 100%;
+	transition: scale 1s;
+}
+.card__title {
+	text-transform: capitalize;
+	font-size: 20px;
+}
+
+/* Helper Classes */
+.transparent {
+	opacity: 0;
+}
+.small {
+	transform: scale(0.9);
+}
+.hidden {
+	display: none;
+}
+.grid-center {
+	display: grid;
+	place-items: center;
+}
+.card-hidden {
+	opacity: 0;
+	transform: translateX(-30%);
+}
+.slide-up {
+	transform: translateY(-10px);
+}
