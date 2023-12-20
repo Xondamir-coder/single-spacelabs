@@ -39,7 +39,7 @@ const titles = [
 ];
 const links = ['/sliced', '/shape-morph', '/column-row', '/grid', '/svg-filter', '/long-read'];
 const createCards = function () {
-	const home = window.location.origin;
+	const home = window.location.origin || '/single-spacelabs';
 
 	titles.forEach((title, i) => {
 		const html = `
