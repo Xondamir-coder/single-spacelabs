@@ -39,9 +39,11 @@ const titles = [
 ];
 const links = ['/sliced', '/shape-morph', '/column-row', '/grid', '/svg-filter', '/long-read'];
 const createCards = function () {
+	const home = window.location.origin;
+
 	titles.forEach((title, i) => {
 		const html = `
-		<a href="/single-spacelabs${links[i]}" class="card card-hidden">
+		<a href="${home}${links[i]}" class="card card-hidden">
 			<div class="card__banner">
 				<img class="card__banner" src="assets/banner-${i + 1}.jpg" alt="banner-${i + 1}"/>
 			</div>
